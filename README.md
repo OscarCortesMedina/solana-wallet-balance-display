@@ -9,4 +9,4 @@ This application allows you to check the SOL balance of your Solana wallet. It's
 
 ## Vercel
 
-[Visit Vercel APP]().
+[Visit Vercel APP](https://solana-wallet-balance-display-7u1c.vercel.app/).
