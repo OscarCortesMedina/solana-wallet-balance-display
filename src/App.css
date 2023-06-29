@@ -1,0 +1,21 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.content{
+    text-align: center;
+    padding: 5rem;
+    background: white;
+    border-radius: 12px;
+}
