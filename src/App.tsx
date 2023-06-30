@@ -83,22 +83,26 @@ const Contents: FC = () => {
 
   // Get the balance whenever the user changes wallets
     return (
-    <Layout className='layout'>
-        <Header>
-            <Title level={2} style={{ color: 'white' }}>
-                Solana Wallet Adapter (devnet)
-            </Title>
-        </Header>
-        <Content className='content' >
-            {!connected && <WalletMultiButton />}
-            {connected && <WalletDisconnectButton />}
-            {connected && <Title level={3}>
-                Balance: 
-                { balance !== undefined && balance !== null ? 
-                 `${balance} SOL` : 'Loading...'} 
-                 {balance === null && "Error connecting or getting wallet balance"}
-                </Title>}
-        </Content>
-    </Layout>
+      <div className="App">
+        <div className='container'>
+          <Layout className='layout'>
+              <Header className='header'>
+                  <Title level={2} style={{ color: 'white' }}>
+                      Solana Wallet Adapter (devnet)
+                  </Title>
+              </Header>
+              <Content className='content' >
+                  {!connected && <WalletMultiButton />}
+                  {connected && <WalletDisconnectButton />}
+                  {connected && <Title style={{ color: 'white' }} level={3}>
+                      Balance: 
+                      { balance !== undefined && balance !== null ? 
+                      `${balance} SOL` : 'Loading...'} 
+                      {balance === null && "Error connecting or getting wallet balance"}
+                      </Title>}
+              </Content>
+          </Layout>
+        </div>
+    </div>
     );
 };

@@ -3,19 +3,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
 
 .layout {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 50vh;
+    max-width: 90%;
     background-color: #f0f2f5;
+    border-radius: 12px!important;
+    background-image: url('../public/solana-back.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+
 }
 
 .content{
     text-align: center;
-    padding: 5rem;
+    padding: 10rem;
     background: white;
     border-radius: 12px;
+    background-color: transparent;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  border-radius: 12px;
+}
+
+.header{
+  background-color: transparent;
 }
